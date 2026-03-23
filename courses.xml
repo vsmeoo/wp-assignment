@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+    <course id="1">
+        <title>Complete Web Development</title>
+        <instructor>
+            <name>John Smith</name>
+            <email>john.smith@edulearn.com</email>
+            <experience>10 years</experience>
+            <bio>Expert instructor with extensive experience in full-stack web development. Passionate about teaching modern web technologies.</bio>
+        </instructor>
+        <price currency="USD">99</price>
+        <rating>4.8</rating>
+        <reviews>512</reviews>
+        <category>Development</category>
+        <level>Beginner to Advanced</level>
+        <duration>12 weeks</duration>
+        <students>2500</students>
+        <description>Learn full-stack web development from HTML basics to advanced JavaScript frameworks. This comprehensive course covers everything you need to become a professional web developer.</description>
+        <skills>
+            <skill>HTML5 &amp; CSS3</skill>
+            <skill>JavaScript ES6+</skill>
+            <skill>React.js</skill>
+            <skill>Node.js Backend</skill>
+            <skill>Database Design</skill>
+            <skill>Deployment &amp; DevOps</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>Foundations</title>
+                <topics>
+                    <topic>Introduction &amp; Setup</topic>
+                    <topic>Core Concepts</topic>
+                    <topic>Best Practices</topic>
+                </topics>
+            </module>
+            <module number="2">
+                <title>Intermediate Topics</title>
+                <topics>
+                    <topic>Advanced Techniques</topic>
+                    <topic>Project Building</topic>
+                    <topic>Debugging &amp; Optimization</topic>
+                </topics>
+            </module>
+            <module number="3">
+                <title>Advanced &amp; Real World</title>
+                <topics>
+                    <topic>Professional Workflow</topic>
+                    <topic>Capstone Project</topic>
+                    <topic>Interview Preparation</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>Basic understanding of HTML and CSS</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-01-15</lastUpdated>
+    </course>
+
+    <course id="2">
+        <title>UI/UX Design Mastery</title>
+        <instructor>
+            <name>Sarah Johnson</name>
+            <email>sarah.johnson@edulearn.com</email>
+            <experience>8 years</experience>
+            <bio>Talented UX/UI designer with portfolio at top tech companies. Specialized in user-centered design and design thinking.</bio>
+        </instructor>
+        <price currency="USD">79</price>
+        <rating>4.9</rating>
+        <reviews>328</reviews>
+        <category>Design</category>
+        <level>Beginner to Intermediate</level>
+        <duration>10 weeks</duration>
+        <students>1800</students>
+        <description>Master the art and science of user interface and user experience design. Learn design thinking, prototyping, and real-world design practices used by top companies.</description>
+        <skills>
+            <skill>Design Principles</skill>
+            <skill>Figma Mastery</skill>
+            <skill>User Research</skill>
+            <skill>Prototyping</skill>
+            <skill>Wireframing</skill>
+            <skill>Design Systems</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>Design Fundamentals</title>
+                <topics>
+                    <topic>Color Theory</topic>
+                    <topic>Typography</topic>
+                    <topic>Layout Principles</topic>
+                </topics>
+            </module>
+            <module number="2">
+                <title>Tools &amp; Workflow</title>
+                <topics>
+                    <topic>Figma Basics</topic>
+                    <topic>Prototyping Tools</topic>
+                    <topic>Design Systems</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>None</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-02-01</lastUpdated>
+    </course>
+
+    <course id="3">
+        <title>Python for Beginners</title>
+        <instructor>
+            <name>Mike Chen</name>
+            <email>mike.chen@edulearn.com</email>
+            <experience>12 years</experience>
+            <bio>Python expert and software engineer. Known for making complex concepts simple and engaging.</bio>
+        </instructor>
+        <price currency="USD">49</price>
+        <rating>4.7</rating>
+        <reviews>891</reviews>
+        <category>Programming</category>
+        <level>Beginner</level>
+        <duration>8 weeks</duration>
+        <students>5200</students>
+        <description>Start your programming journey with Python. Perfect for absolute beginners, this course teaches programming fundamentals through practical, engaging examples.</description>
+        <skills>
+            <skill>Python Syntax</skill>
+            <skill>Data Types</skill>
+            <skill>Functions</skill>
+            <skill>Object-Oriented Programming</skill>
+            <skill>File Handling</skill>
+            <skill>Libraries &amp; Modules</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>Python Basics</title>
+                <topics>
+                    <topic>Getting Started</topic>
+                    <topic>Variables &amp; Data Types</topic>
+                    <topic>Control Flow</topic>
+                </topics>
+            </module>
+            <module number="2">
+                <title>Object-Oriented Programming</title>
+                <topics>
+                    <topic>Classes &amp; Objects</topic>
+                    <topic>Inheritance</topic>
+                    <topic>Polymorphism</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>None</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-01-20</lastUpdated>
+    </course>
+
+    <course id="4">
+        <title>JavaScript Advanced Concepts</title>
+        <instructor>
+            <name>Emma Wilson</name>
+            <email>emma.wilson@edulearn.com</email>
+            <experience>9 years</experience>
+            <bio>JavaScript specialist with expertise in modern frameworks and best practices.</bio>
+        </instructor>
+        <price currency="USD">89</price>
+        <rating>4.6</rating>
+        <reviews>456</reviews>
+        <category>Development</category>
+        <level>Intermediate to Advanced</level>
+        <duration>10 weeks</duration>
+        <students>1200</students>
+        <description>Dive deep into JavaScript's advanced features. Learn closures, async programming, design patterns, and best practices used in production applications.</description>
+        <skills>
+            <skill>Closures &amp; Scope</skill>
+            <skill>Async/Await</skill>
+            <skill>Promises</skill>
+            <skill>Design Patterns</skill>
+            <skill>Testing</skill>
+            <skill>Performance Optimization</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>Advanced Concepts</title>
+                <topics>
+                    <topic>Closures</topic>
+                    <topic>Event Loop</topic>
+                    <topic>Prototypes</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>Basic JavaScript knowledge</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-02-05</lastUpdated>
+    </course>
+
+    <course id="5">
+        <title>Digital Marketing Basics</title>
+        <instructor>
+            <name>David Brown</name>
+            <email>david.brown@edulearn.com</email>
+            <experience>7 years</experience>
+            <bio>Digital marketing strategist with proven track record of successful campaigns.</bio>
+        </instructor>
+        <price currency="USD">59</price>
+        <rating>4.5</rating>
+        <reviews>234</reviews>
+        <category>Marketing</category>
+        <level>Beginner</level>
+        <duration>6 weeks</duration>
+        <students>900</students>
+        <description>Learn the fundamentals of digital marketing including SEO, social media, email marketing, and analytics to grow your online presence.</description>
+        <skills>
+            <skill>SEO Fundamentals</skill>
+            <skill>Social Media Strategy</skill>
+            <skill>Email Marketing</skill>
+            <skill>Analytics</skill>
+            <skill>Content Marketing</skill>
+            <skill>PPC Advertising</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>Foundations</title>
+                <topics>
+                    <topic>Digital Marketing Overview</topic>
+                    <topic>Target Audience</topic>
+                    <topic>Marketing Strategy</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>None</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-01-25</lastUpdated>
+    </course>
+
+    <course id="6">
+        <title>React.js Mastery Course</title>
+        <instructor>
+            <name>Lisa Anderson</name>
+            <email>lisa.anderson@edulearn.com</email>
+            <experience>11 years</experience>
+            <bio>React specialist with experience building scalable applications at major tech companies.</bio>
+        </instructor>
+        <price currency="USD">109</price>
+        <rating>4.9</rating>
+        <reviews>678</reviews>
+        <category>Development</category>
+        <level>Intermediate to Advanced</level>
+        <duration>11 weeks</duration>
+        <students>2100</students>
+        <description>Master React.js and build modern, scalable web applications. Learn hooks, state management, and best practices from industry experts.</description>
+        <skills>
+            <skill>React Fundamentals</skill>
+            <skill>Hooks &amp; State</skill>
+            <skill>Redux</skill>
+            <skill>Context API</skill>
+            <skill>Performance Optimization</skill>
+            <skill>Testing React Apps</skill>
+        </skills>
+        <modules>
+            <module number="1">
+                <title>React Basics</title>
+                <topics>
+                    <topic>Components</topic>
+                    <topic>Props &amp; State</topic>
+                    <topic>Lifecycle Methods</topic>
+                </topics>
+            </module>
+            <module number="2">
+                <title>Hooks &amp; Advanced Patterns</title>
+                <topics>
+                    <topic>Hooks API</topic>
+                    <topic>Custom Hooks</topic>
+                    <topic>Context API</topic>
+                </topics>
+            </module>
+        </modules>
+        <prerequisites>JavaScript fundamentals required</prerequisites>
+        <certificate>true</certificate>
+        <lastUpdated>2024-02-10</lastUpdated>
+    </course>
+</courses>

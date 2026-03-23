@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Learnsphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Learnsphere</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Page -->
+    <div class="contact-page">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <!-- Contact Info Cards -->
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>123 Education Street<br>Learning City, LC 12345<br>United States</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:bolishettyrahul11@gmail.com">bolishettyrahul11@gmail.com</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>☎️ Phone</h3>
+                    <p>8247708238<br>Mon-Fri: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="business-hours">
+                <h3>Business Hours</h3>
+                <div class="hours-grid">
+                    <div>
+                        <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM
+                    </div>
+                    <div>
+                        <strong>Saturday:</strong> 10:00 AM - 4:00 PM
+                    </div>
+                    <div>
+                        <strong>Sunday:</strong> Closed
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h3>Send us a Message</h3>
+                <form id="contactUserForm" onsubmit="validateContact(event)">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="contactName" placeholder="Your name" required>
+                        <span class="error" id="contactNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="contactEmail" placeholder="Your email" required>
+                        <span class="error" id="contactEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone (Optional)</label>
+                        <input type="tel" id="contactPhone" placeholder="Your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="contactSubject" placeholder="What is this about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="contactMessage" placeholder="Type your message here..." rows="5" required></textarea>
+                        <span class="error" id="contactMessageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <p id="contactSuccess" class="success-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Email: bolishettyrahul11@gmail.com | Phone: 8247708238</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

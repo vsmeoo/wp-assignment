@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Root element definition -->
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="course" type="courseType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Course complex type -->
+    <xs:complexType name="courseType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="instructor" type="instructorType"/>
+            <xs:element name="price" type="priceType"/>
+            <xs:element name="rating" type="ratingType"/>
+            <xs:element name="reviews" type="xs:positiveInteger"/>
+            <xs:element name="category" type="xs:string"/>
+            <xs:element name="level" type="levelType"/>
+            <xs:element name="duration" type="xs:string"/>
+            <xs:element name="students" type="xs:nonNegativeInteger"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="skills" type="skillsType"/>
+            <xs:element name="modules" type="modulesType"/>
+            <xs:element name="prerequisites" type="xs:string"/>
+            <xs:element name="certificate" type="xs:boolean"/>
+            <xs:element name="lastUpdated" type="xs:date"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <!-- Instructor complex type -->
+    <xs:complexType name="instructorType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="email" type="emailType"/>
+            <xs:element name="experience" type="xs:string"/>
+            <xs:element name="bio" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Price type with currency attribute -->
+    <xs:complexType name="priceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="currency" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Rating restriction -->
+    <xs:simpleType name="ratingType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="5"/>
+            <xs:fractionDigits value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Level enumeration -->
+    <xs:simpleType name="levelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Beginner"/>
+            <xs:enumeration value="Beginner to Intermediate"/>
+            <xs:enumeration value="Intermediate"/>
+            <xs:enumeration value="Intermediate to Advanced"/>
+            <xs:enumeration value="Advanced"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Skills complex type -->
+    <xs:complexType name="skillsType">
+        <xs:sequence>
+            <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Modules complex type -->
+    <xs:complexType name="modulesType">
+        <xs:sequence>
+            <xs:element name="module" type="moduleType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Module complex type -->
+    <xs:complexType name="moduleType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="topics" type="topicsType"/>
+        </xs:sequence>
+        <xs:attribute name="number" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+
+    <!-- Topics complex type -->
+    <xs:complexType name="topicsType">
+        <xs:sequence>
+            <xs:element name="topic" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Email type with pattern -->
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

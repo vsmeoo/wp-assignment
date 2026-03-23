@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Learnsphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Learnsphere</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Course Details Page -->
+    <div class="course-details-page">
+        <div class="container">
+            <!-- Back to Courses Link -->
+            <a href="courses.html" class="back-link">← Back to Courses</a>
+
+            <div class="course-header">
+                <h1 id="courseTitle">Web Development Fundamentals</h1>
+                <div class="course-meta">
+                    <span>👨‍🏫 Instructor: <strong id="courseInstructor">John Smith</strong></span>
+                    <span>⭐ Rating: <strong id="courseRating">4.8 / 5</strong></span>
+                    <span>👥 Students: <strong id="courseStudents">2,500+</strong></span>
+                </div>
+            </div>
+
+            <div class="course-content">
+                <!-- Left Side -->
+                <div class="course-info">
+                    <h3>About This Course</h3>
+                    <p id="courseDescription">
+                        Learn the fundamentals of web development including HTML, CSS, and JavaScript.
+                        This course is designed for beginners with no prior experience.
+                    </p>
+
+                    <h3>What You'll Learn</h3>
+                    <ul class="learning-points">
+                        <li>✓ HTML5 semantic markup</li>
+                        <li>✓ CSS3 styling and layouts</li>
+                        <li>✓ JavaScript fundamentals</li>
+                        <li>✓ Responsive design</li>
+                        <li>✓ Best practices and accessibility</li>
+                    </ul>
+
+                    <h3>Course Curriculum</h3>
+                    <div class="curriculum">
+                        <div class="module">
+                            <h4>Module 1: HTML Basics</h4>
+                            <ul>
+                                <li>Introduction to HTML</li>
+                                <li>Semantic markup</li>
+                                <li>Forms and inputs</li>
+                            </ul>
+                        </div>
+
+                        <div class="module">
+                            <h4>Module 2: CSS Styling</h4>
+                            <ul>
+                                <li>CSS selectors and properties</li>
+                                <li>Box model</li>
+                                <li>Flexbox and CSS Grid</li>
+                            </ul>
+                        </div>
+
+                        <div class="module">
+                            <h4>Module 3: JavaScript</h4>
+                            <ul>
+                                <li>Variables and data types</li>
+                                <li>Functions and events</li>
+                                <li>DOM manipulation</li>
+                            </ul>
+                        </div>
+
+                        <div class="module">
+                            <h4>Module 4: Projects</h4>
+                            <ul>
+                                <li>Build a portfolio website</li>
+                                <li>Interactive web app</li>
+                                <li>Real-world project</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="course-sidebar">
+                    <div class="course-card-detail">
+                        <div class="price-section">
+                            <span class="price" id="coursePrice">$49.99</span>
+                            <span class="original-price" id="originalPrice">$99.99</span>
+                        </div>
+
+                        <div class="course-details-box">
+                            <div class="detail-item">
+                                <strong>Duration:</strong><br>
+                                <span id="courseDuration">40 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Level:</strong><br>
+                                <span id="courseLevel">Beginner</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Language:</strong><br>
+                                <span id="courseLanguage">English</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Certificate:</strong><br>
+                                <span id="courseCertificate">Yes, included</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-enroll" onclick="enrollCourse()">Enroll Now</button>
+                        <button class="btn-secondary" onclick="addToWishlist()">Add to Wishlist</button>
+
+                        <div class="requirements">
+                            <h4>Requirements</h4>
+                            <ul>
+                                <li>No prior coding experience needed</li>
+                                <li>Computer with internet connection</li>
+                                <li>Text editor (VS Code recommended)</li>
+                                <li>Browser (Chrome, Firefox, Safari)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructor Info -->
+            <div class="instructor-section">
+                <h3>About the Instructor</h3>
+                <div class="instructor-info">
+                    <div class="instructor-details">
+                        <h4 id="instructorName">John Smith</h4>
+                        <p id="instructorBio">
+                            John is a full-stack developer with 10+ years of experience in web development.
+                            He's passionate about teaching and has helped thousands of students learn to code.
+                        </p>
+                        <div class="instructor-stats">
+                            <div>
+                                <strong>Experience:</strong> 10+ years
+                            </div>
+                            <div>
+                                <strong>Students:</strong> 50,000+
+                            </div>
+                            <div>
+                                <strong>Courses:</strong> 12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Email: bolishettyrahul11@gmail.com | Phone: 8247708238</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
